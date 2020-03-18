@@ -1,7 +1,18 @@
 public class HomeworkFour {
 
     public String hotOrNot(Season e){
-        return e.getDescription();
+        switch (e){
+            case WINTER:
+                return "winter";
+            case SPRING:
+                return "Lente";
+            case SUMMER:
+                return "zomer";
+            case FALL:
+                return "herst";
+            default:
+                return "onbekend";
+        }
     }
 
     public void hourglass(int n) {

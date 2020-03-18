@@ -1,3 +1,5 @@
+import human.Gender;
+import human.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

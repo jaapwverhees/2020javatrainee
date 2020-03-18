@@ -8,6 +8,6 @@ class HomeworkFourTest {
     void hourglass() {
         Season season = Season.WINTER;
         HomeworkFour les = new HomeworkFour();
-        assertEquals("cold", les.hotOrNot(season));
+        assertEquals("winter", les.hotOrNot(season));
     }
 }
