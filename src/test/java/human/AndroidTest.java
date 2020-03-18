@@ -15,7 +15,7 @@ class AndroidTest {
     }
 
     @Test
-    void greeting() {
+    void testIfGreetingifCorrrect() {
         assertEquals("I'm half human, my Energy Level is 50 %", android.greeting());
     }
 

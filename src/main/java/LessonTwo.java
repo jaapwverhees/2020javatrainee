@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+@Deprecated
+//methodes are now placed in there own classes
 public class LessonTwo {
 
     public int calculateHours(int start, int increment) {
