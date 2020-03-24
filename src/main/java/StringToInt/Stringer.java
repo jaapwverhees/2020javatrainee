@@ -8,7 +8,7 @@ public class Stringer {
         //set returnvalue to zero
         int sum = 0;
         //check first Char. to do this in the for loop invokes a indexOutOfBoundExeption.
-        //TODO find cleaner solution.
+        //TODO find cleaner solution.grge
         if (Character.isDigit(string.charAt(0))) {
             sum += Character.getNumericValue(string.charAt(0));
         }
