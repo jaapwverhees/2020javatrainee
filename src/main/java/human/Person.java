@@ -66,6 +66,17 @@ public class Person extends Human {
         return historyRecords;
     }
 
+    public Human subHuman(){
+        Human human = new Human() {
+
+            @Override
+            public String greeting() {
+                return "There are no subhumans, everybody is equal";
+            }
+        };
+        return human;
+    }
+
     //ik had dit zelf anders gedaan maar opdracht
     public void addHistory(String description) throws Exception {
 

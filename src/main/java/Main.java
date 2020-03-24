@@ -1,18 +1,15 @@
-import human.Person;
+import Annotations.Person;
+import Collections.Duo;
+import Collections.MyCollection;
+import StringToInt.Stringer;
+
+import java.util.Collections;
 
 public class Main {
 
     public static void main(String[] args) {
-        Person person = new Person();
-        int counter = 0;
-        for (int i = 0; i < 13; i++) {
-            try {
-                person.addHistory("hello" + i);
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-                break;
-            }
-        }
+        Stringer stringer = new Stringer();
+        stringer.stringAdder("3");
     }
 }
 

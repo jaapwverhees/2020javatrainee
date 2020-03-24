@@ -27,4 +27,9 @@ class PersonTest {
         Throwable exception = assertThrows(Exception.class,() -> person.addHistory("dreadfull"));
         Assertions.assertEquals("Array full", exception.getMessage());
     }
+
+    @Test
+    void subHuman() {
+        assertEquals("There are no subhumans, everybody is equal", person.subHuman().greeting());
+    }
 }

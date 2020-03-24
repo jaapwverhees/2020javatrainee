@@ -11,8 +11,8 @@ public class LabsFive {
     public int greatestNumber(int... values) {
         int greatest = values[0];
 
-        for (int i = 1; i < values.length; i++) {
-            greatest = Math.max(greatest, values[i]);
+        for (int i : values) {
+            greatest = Math.max(greatest, i);
         }
         return greatest;
     }

@@ -20,7 +20,7 @@ class LabsFiveTest {
         assertEquals(les.greatestLength("shrtString", "Long String"), "Long String");
     }
 
-    @Test
+    @Test()
     void testIfgreatestNumberOfaVariableLengthListisReturned() {
         Assertions.assertEquals(les.greatestNumber(1,2,3,4,5,2), 5);
     }
