@@ -27,5 +27,8 @@ class StringerTest {
         assertEquals(6, stringer.stringAdderNotNegative("12\n3"));
         Throwable exception = assertThrows(Exception.class,() -> stringer.stringAdderNotNegative("dfqwdfqwd-1"));
         Assertions.assertEquals("Negatives are not allowed, negatives are: -1", exception.getMessage());
+        exception = assertThrows(Exception.class,() -> stringer.stringAdderNotNegative("-1dfqwdfqwd-1"));
+        Assertions.assertEquals("Negatives are not allowed, negatives are: -1 -1", exception.getMessage());
+        //TODO check for number greater then 9;
     }
 }
